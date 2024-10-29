@@ -1,0 +1,383 @@
+/* font nerko */
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+/* font-family: "Nerko One", cursive; */
+
+/* font poppins */
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Poppins", sans-serif; */
+
+/*  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff9d0;
+}
+
+.navigation {
+  display: flex;
+  padding: 0 7%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #a0deff;
+}
+
+.navigation h1 {
+  font-size: 1.6rem;
+  font-family: "Nerko One", cursiv;
+  color: #a0deff;
+  text-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+}
+
+.navigation span {
+  color: #5ab2ff;
+  font-family: "Nerko One", cursiv;
+}
+
+.navigation .nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.navigation .nav-list li a {
+  text-decoration: none;
+  color: #a0deff;
+  font-weight: 500;
+  margin: 0 1rem;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  border-radius: 2px;
+}
+
+.navigation .nav-list li a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #5ab2ff;
+  border-bottom: 2px solid #5ab2ff;
+}
+
+.navigation .icon .icons {
+  outline: none;
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: #5ab2ff;
+  cursor: pointer;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-image: url(img/image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home .home-content {
+  padding: 1.4rem 7%;
+  max-width: 50rem;
+  text-align: end;
+}
+
+.home .home-content h2 {
+  text-align: end;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 15px #5ab2ff;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.home .home-content p {
+  text-align: end;
+  line-height: 1.2;
+  font-size: 1.5rem;
+}
+
+.home .home-content span {
+  color: #5ab2ff;
+  text-shadow: 0 0 8px #fff;
+}
+
+.home .home-content .btn {
+  outline: none;
+  border: none;
+  color: #fff;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #5ab2ff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home .home-content .btn:hover {
+  background-color: #a0deff;
+  box-shadow: 0 0 20px #5ab2ff;
+  text-shadow: 0 0 10px #5ab2ff;
+}
+
+/* shop */
+.shop {
+  padding: 5rem 7% 1rem;
+  text-align: center;
+}
+
+.shop h3 {
+  font-size: 2rem;
+  color: #5ab2ff;
+  text-shadow: 0 0 10px rgba(1, 1, 1, 0.5);
+}
+
+.shop .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.shop .row .shop-item {
+  width: 23%;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.shop .row .shop-item img {
+  width: 100%;
+}
+
+.shop .shop-item h5 {
+  font-size: 0.8rem;
+}
+
+.shop .shop-item p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.shop .shop-item button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #5ab2ff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.shop .shop-item button:hover {
+  background-color: #a0deff;
+  transition: 0.3s ease;
+}
+
+.contact {
+  padding: 5rem 7% 1.4rem;
+  text-align: center;
+  background-color: #a0deff;
+}
+
+.contact h3 {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(1, 1, 1, 0.7);
+}
+
+.contact form {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact form .contact-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact form .contact-group input {
+  width: 30rem;
+  margin-left: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  color: black;
+}
+
+.contact form .contact-group .icon {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact form textarea {
+  margin-top: 2rem;
+  width: 25rem;
+  height: 10rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  overflow: hidden;
+  color: black;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  outline: none;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 7px;
+  background-color: #5ab2ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* end shop */
+
+/* footer */
+footer {
+  padding: 3rem 7% 1.4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer-menu h4 {
+  color: #5ab2ff;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .footer-menu ul {
+  list-style: none;
+}
+
+footer .footer-menu ul li a {
+  line-height: 2.5;
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer .footer-menu ul li a:hover {
+  color: #0d4867;
+  border-bottom: 2px solid #0d4867;
+}
+
+/* footer end */
+
+/* responsive */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  .navigation {
+    padding: 1rem 7%;
+  }
+
+  .navigation .nav-list {
+    flex-direction: column;
+    position: absolute;
+    width: 20rem;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    top: 100%;
+    right: -100%;
+    transition: 0.5s ease;
+    backdrop-filter: blur(20px);
+    background-color: rgba(1, 1, 1, 0.5);
+  }
+
+  .navigation .nav-list.active {
+    right: 0;
+  }
+
+  .navigation .nav-list li {
+    margin-bottom: 4rem;
+  }
+
+  .navigation .nav-list li a:hover {
+    border-radius: 0px;
+  }
+
+  .navigation .icon {
+    display: flex;
+    text-align: center;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  .shop .row .shop-item {
+    width: 45%;
+    gap: 5px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  footer .footer-menu {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 65%;
+  }
+
+  .contact form .contact-group input {
+    width: 20rem;
+  }
+
+  .contact form textarea {
+    width: 20rem;
+  }
+}
